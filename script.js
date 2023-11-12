@@ -1,0 +1,3 @@
+
+
+Element.addevenlistener("click", myFunction);
