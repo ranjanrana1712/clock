@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.clock-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    top: 50%;
+}
+
+
+.hour-hand {
+    background-color: white;
+    height: 6px;
+}
+.min-hand {
+    background-color: white;
+    height: 2px;
+    width: 100px
+}
+
+.sec-hand {
+    background-color: white;
+}
+.clock{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* border: 10px solid #ADD8E6 ; */
+    border-radius: 50%;
+    font-family: Arial, sans-serif;
+
+}
+.number {
+    position: relative;
+    transform-origin: 50% 100%;
+    color: red;
+}
+/* .number-1 {
+    top: 10px;
+    left: 70%;
+    transform: translateX(-50%);    
+} */
+/* .number-2 {
+    top: 100px;
+    right: 10px;
+    transform: translateY(-50%);
+
+} */
+/* .number-3 {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+} */
+/* .number-4 {
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+} */
+/* 
+.number-5 {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+/* .number-6 {
+    bottom: 20px;
+    left: 90px;
+    transform: translateY(50%);
+
+} */
+/* .number-7 {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);    
+} */
+
+/* .number-8 {
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+} */
+/* .number-9{
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+} */
+/* .number-10{
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+} */
+/* .number-11{
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+
+} */
+.number-12{
+    top: -60px;
+    right: 90px;
+    transform: translateY(50%);
+}
+
+.circle {
+    background-color: rgb(43, 44, 53);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
