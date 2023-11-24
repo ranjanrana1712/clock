@@ -25,7 +25,7 @@ const hourHand = document.querySelector('#hour-hand');
 
             
         }
-
+        //setDate function is called every 1second
         setInterval(setDate, 1000);
 
 // Element.addevenlistener("click", myFunction);
