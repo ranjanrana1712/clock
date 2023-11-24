@@ -12,8 +12,8 @@ body {
 }
 
 .clock {
-    height: 90vmin;
-    width: 90vmin;
+    height: 60vmin;
+    width: 60vmin;
     background: #111;
     border-radius: 50%;
     border: 4vmin solid orange;
