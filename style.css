@@ -5,126 +5,63 @@
 
 }
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-.clock-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 100vw;
+    /* background: linear-gradient(45deg, #ffa537 50%, #111 50%); */
+    background: linear-gradient(50deg, white 50%, black 50%);
 }
 
-
-.hand {
+.clock {
+    height: 90vmin;
+    width: 90vmin;
+    background: #111;
+    border-radius: 50%;
+    border: 4vmin solid orange;
     position: absolute;
-    width: 50%;
-    height: 2px;
-    background-color: white;
-    transform-origin: 100%;
-    transform: rotate(90deg);
     top: 50%;
-    left: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* first value set the outer shadow and second value sets the outer value*/
+    box-shadow: 0 0 30px 5px lightyellow,
+    inset 0 0 10px 1px black;    
+}
+svg {
+    height: 100%;
+
+    width: 100%;
 }
 
+#hour-hand{
+    height: 20%;
+    width: 3%;
+    background: white;
+}
 
-.hour-hand {
-    background-color: green;
-    height: 6px;
+#min-hand {
+    height: 25%;
+    width: 2%;
+    background:#777 ;
+
+}
+
+#sec-hand {
+    height: 30%;
+    width: 1%;
+    background: #ff7337;
+
+}
+
+#hour-hand, #min-hand, #sec-hand {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 50%;
+    z-index: -1;
+    border-radius: 1vmin;
+    transform-origin: bottom;
     
 }
-.min-hand {
-    background-color: yellow;
-    height: 2px;
-    width: 100px;
-    
-}
-
-.second-hand {
-    background-color: orange;
-    width: 30px;
-    transform-origin: 100% 120%; /* Maintain rotation around the right edge */    
-}
-
-
-.clock{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    /* border: 10px solid #ADD8E6 ; */
-    border-radius: 50%;
-    font-family: Arial, sans-serif;
-
-}
-.number {
-    position: relative;
-    transform-origin: 50% 100%;
-    color: white;
-}
-.number-1 {
-    top: -38%;
-    transform: translateX(1500%);
-} 
-.number-2 {
-    top: -20%;
-    transform: translateX(1710%);
-}
-.number-3 {
-    transform: translateX(1690%);
-    bottom: -2%;
-}
-.number-4 {
-    bottom: -30%;
-    transform: translateX(1298%);
-}
-
-
-.number-5 {
-    bottom: -42%;
-    transform: translateX(800%);
-}
-.number-6 {
-
-    top: 90px;
-    transform: translateX(190%);   
-}
-.number-7 {
-    top: 80px;
-    transform: translateX(-430%); 
-       
-}
-
-.number-8 {
-    transform: translateX(-900%);
-    bottom: -25%;
-    
-}
-.number-9{
-    transform: translateX(-1300%);
-}
-.number-10{
-    transform: translateX(-650%);
-    top: -20%;
-}
-.number-11{
-    transform: translate(-600%);
-    top: -38%;
-}
-.number-12{
-    top: -90px;
-    right: 90px;
-    transform: translateY(50%);
-}
-
-.circle {
-    background-color: black;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+path {
+    fill: rgb(30, 255, 0) !important;
 }
